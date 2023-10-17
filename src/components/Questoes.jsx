@@ -30,6 +30,7 @@ const Questoes = () => {
     }
     if (questoesRespondidas.length === questoes.length) {
       alert(`Quiz concluído! Você acertou ${corretas} de ${questoes.length} questões.`);
+      setRespostasSelecionadas(Array(questoes.length).fill(null));
     } else {
       alert(`Você precisa responder todas as perguntas antes de finalizar.`);
     }
