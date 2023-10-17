@@ -1,0 +1,46 @@
+div{
+    display: grid;
+}
+
+.respondidos{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 20px;
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group label{
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+
+}
+
+.radio-group label:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(121, 121, 121, 0.85);
+    border: 2px solid #1a1a1a;
+    border-radius: 50%; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.radio-group input[type="radio"]:checked + label:before {
+    background-color: #5960ec; 
+}
+
+button{
+    margin-left: 80%;
+    margin-top: 30px;
+}
