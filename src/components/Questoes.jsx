@@ -31,7 +31,7 @@ const Questoes = () => {
     if (questoesRespondidas.length === questoes.length) {
       alert(`Quiz concluído! Você acertou ${corretas} de ${questoes.length} questões.`);
     } else {
-      alert(`Você precisa responder todas as perguntas antes de finalizar`);
+      alert(`Você precisa responder todas as perguntas antes de finalizar.`);
     }
   };
 
