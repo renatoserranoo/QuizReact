@@ -20,6 +20,13 @@ const Questoes = () => {
     }setQuestoesRespondidas(respondidas);
   }, [respostasSelecionadas]);
 
+  const resetRadioButtons = () => {
+    const radioInputs = document.querySelectorAll('input[type="radio"]');
+    radioInputs.forEach((radio) => {
+      radio.checked = false;
+    });
+  };
+
   const verificarRespostas = () => {
     let corretas = 0;
     
@@ -30,6 +37,7 @@ const Questoes = () => {
     }
     if (questoesRespondidas.length === questoes.length) {
       alert(`Quiz concluído! Você acertou ${corretas} de ${questoes.length} questões.`);
+      resetRadioButtons();
       setRespostasSelecionadas(Array(questoes.length).fill(null));
     } else {
       alert(`Você precisa responder todas as perguntas antes de finalizar.`);
