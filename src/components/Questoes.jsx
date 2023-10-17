@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Questoes.css'
 
-const Q1 = () => {
+const Questoes = () => {
   const [respostasSelecionadas, setRespostasSelecionadas] = useState(Array(questoes.length).fill(null));
   const [questoesRespondidas, setQuestoesRespondidas] = useState([]);
   
@@ -90,4 +90,4 @@ const questoes = [
   },
 ]
 
-export default Q1
+export default Questoes
