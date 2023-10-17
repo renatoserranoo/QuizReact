@@ -1,12 +1,8 @@
-div{
-    display: grid;
-}
-
 .respondidos{
     display: flex;
     flex-direction: column;
     align-items: end;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .radio-group input[type="radio"] {
@@ -41,6 +37,17 @@ div{
 }
 
 button{
-    margin-left: 80%;
+    margin-left: 90%;
     margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .respondidos{
+        align-items: center;
+        margin-right: 0;
+    }
+    button {
+      margin-top: 20px;
+      margin-inline: 30%;
+    }
 }
