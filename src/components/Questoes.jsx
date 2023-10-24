@@ -64,7 +64,7 @@ const Questoes = () => {
         ))}
           <div class="respondidos">
             {questoesRespondidas.map((index) => (
-              <div><p key={index}>Questão {index + 1}: Escolha {respostasSelecionadas[index]}</p></div>
+              <div><p key={index}><b>Questão {index + 1}:</b> Escolha {respostasSelecionadas[index]}</p></div>
             ))}
           </div>
         <button onClick={verificarRespostas}>Finalizar Quiz</button>
