@@ -1,6 +1,6 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Questoes from './components/Questoes'
+import Questoes from '../pages/Questoes'
 import PostQuestoes from '../pages/PostQuestoes'
 import Navbar from './components/Navbar'
 
